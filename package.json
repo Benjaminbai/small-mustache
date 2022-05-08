@@ -1,0 +1,17 @@
+{
+  "name": "mustache_template",
+  "version": "1.0.0",
+  "description": "1. 纯Dom 2. 数组join 3. 反引号 4. mustache     - 模版字符串 =》 tokens =》 结合数据 =》 dom字符串     - tokens 其实是js的嵌套数组     - tokens 是AST，虚拟dom的鼻祖",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server"
+  },
+  "author": "benjamin",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "4",
+    "webpack-cli": "3",
+    "webpack-dev-server": "3"
+  }
+}

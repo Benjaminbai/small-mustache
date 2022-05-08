@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="./xuni/boundle.js"></script>
+
+<body>
+
+
+    <script>
+        const str = `
+            <div>
+                <ol>
+                    {{#students}}
+                    <li>
+                        sdudent {{name}} hobbies are
+                        <ol>
+                            {{#hobbies}}
+                            <li>{{.}}</li>
+                            {{/hobbies}}
+                        </ol>
+                    </li>
+                    {{/students}}
+                </ol>    
+            </div>
+        `
+        const data = {
+            students: [
+                { 
+                    name: 'xiaoming', 
+                    hobbies: ['swimming', 'excersize'] 
+                },
+                { 
+                    name: 'xiaohong', 
+                    hobbies: ['football', 'basketball'] 
+                },
+                { 
+                    name: 'xiaolan', 
+                    hobbies: ['eattig', 'sleeping'] 
+                },
+            ]
+        }
+        mustache_template.render(str, data)
+    </script>
+</body>
+
+</html>
